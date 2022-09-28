@@ -157,12 +157,6 @@ class main(Tk):
     def open(self, entry, button):
         edit()
 
-    def insert_list(self):
-        self.active_list.append([Frame(self.topBar_edit)])
-        self.active_list[0].append((Button(self.active_list[0][0], text="testttt"), Label(self.active_list[0][0], text="fez")))
-        for i in range(len(self.active_list[0])):
-            self.active_list[0][i].place(x=50, y=8)
-
     def place_remover(self):
         if self.canBeAdded == True:
             if len(self.itemList) > 0:
@@ -230,8 +224,8 @@ class edit(main):
         root.separator.place(x=30, y=8)
         root.back_button.place(x=8, y=8)
         root.back_button["command"] = self.back
-        root.edit_list.place(x=50, y=8)
-        root.edit_list["command"] = root.insert_list
+#        root.edit_list.place(x=50, y=8)
+#        root.edit_list["command"] = root.insert_list
         root.edit_user_text.place(x=10, y=10, width=280, height=440)
 
     def back(self):
