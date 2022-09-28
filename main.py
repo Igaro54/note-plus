@@ -1,7 +1,6 @@
 from tkinter import ACTIVE, DISABLED, END, Canvas, Frame, PhotoImage, Button, Text, Tk, Entry, Label
 from tkinter.messagebox import showinfo, askyesno
 from functools import partial
-from tkinter.ttk import Separator
 
 
 class main(Tk):
